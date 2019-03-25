@@ -13,6 +13,8 @@ class Module extends Model
     const MODULE_COLLECTIONS = 1;
     const MODULE_BPO = 2;
     const MODULE_CONFIGURATION = 3;
+    const MODULE_MARKETING = 4;
+    const MODULE_INBOUND = 5;
 
     /**
      * The attributes that are fillable via mass assignment.
