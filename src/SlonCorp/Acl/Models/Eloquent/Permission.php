@@ -12,7 +12,7 @@ class Permission extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'label', 'slug', 'description', 'inherit_id'];
+    protected $fillable = ['name', 'label', 'slug', 'description', 'inherit_id', 'module_id'];
 
     /**
      * The database table used by the model.
@@ -44,6 +44,18 @@ class Permission extends Model
         $model = config('auth.providers.users.model', 'SlonCorp\Acl\Models\Eloquent\User');
 
         return $this->belongsToMany($model)->withTimestamps();
+    }
+
+    /**
+     * Permissions can belong to a module.
+     *
+     * @return Model|mixed
+     */
+    public function module()
+    {
+        $model = config('acl.module', 'SlonCorp\Acl\Models\Eloquent\Module');
+
+        return $this->belongsTo($model)->withTimestamps();
     }
 
     /**
