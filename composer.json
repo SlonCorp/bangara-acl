@@ -1,6 +1,6 @@
 {
-    "name": "sloncorp/laravel-acl",
-    "description": "Role-based permissions for Laravel 5 built in Auth system.",
+    "name": "sloncorp/bangara-acl",
+    "description": "Role-based permissions for Laravel 5.6 built in Auth system.",
     "license": "MIT",
     "keywords": [
         "laravel",
