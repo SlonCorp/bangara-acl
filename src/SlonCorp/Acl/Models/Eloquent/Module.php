@@ -10,8 +10,8 @@ class Module extends Model
     /**
      * Modules constants
      */
-    const MODULE_GXR = 1;
-    const MODULE_ROADS = 2;
+    const MODULE_COLLECTIONS = 1;
+    const MODULE_BPO = 2;
     const MODULE_CONFIGURATION = 3;
 
     /**
